@@ -23,6 +23,7 @@ public class Turn : MonoBehaviour
         }
 
     }
+
  
     float pastTime = 0;
     Vector3 homePosition;
@@ -45,6 +46,10 @@ public class Turn : MonoBehaviour
         pastTime += Time.deltaTime;
         Vector3 newPosition = Vector3.Lerp(homePosition, targetPosition, Mathf.PingPong(pastTime, duration) / duration);
         transform.localPosition = newPosition;
+    }
+    void OnValidate()
+    {
+        distance = _distance;
     }
 
 }
