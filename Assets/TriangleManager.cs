@@ -59,6 +59,5 @@ public class TriangleManager : MonoBehaviour
             v[1] = points[(i + 1) % points.Count].position;
             lineRenderers[i].SetPositions(v);
         }
-
     }
 }

@@ -51,5 +51,4 @@ public class Turn : MonoBehaviour
     {
         distance = _distance;
     }
-
 }
