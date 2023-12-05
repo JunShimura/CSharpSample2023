@@ -9,10 +9,11 @@ public class ComponentTest : MonoBehaviour
     void Awake()
     {
         Component[] components_0 = GetComponents<Component>();
-        foreach (var component in components_0)
+        for (int i=0;i<components_0.Length;i++)
         {
-            Debug.Log(component);
+            Debug.Log($"{i}î‘ñ⁄ÇÕ{components_0[i]}");
         }
+        //Rigidbody rb_0 = components_0[3];
         Transform tr = GetComponent<Transform>();
         Rigidbody rb = GetComponent<Rigidbody>();
         Transform[] transforms = new Transform[2];
@@ -25,5 +26,6 @@ public class ComponentTest : MonoBehaviour
         int a = 0;
         float b = 2.5f;
         //a = b; //ÉGÉâÅ[Ç…Ç»ÇÈ
+        b = a;
     }
 }
