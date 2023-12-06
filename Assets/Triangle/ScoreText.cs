@@ -34,6 +34,6 @@ public class ScoreText : MonoBehaviour
     }
     private void UpdateValue()
     {
-        uiText.text = $"{scoreHeader}{_score.ToString()}";
+        uiText.text = $"{scoreHeader}{_score.ToString(scoreFomat)}";
     }
 }

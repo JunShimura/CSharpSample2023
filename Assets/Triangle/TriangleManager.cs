@@ -38,7 +38,13 @@ public class TriangleManager : MonoBehaviour
             points[1].position, 
             points[2].position);
     }
-
+    private void Awake()
+    {
+        if (scoreText == null)
+        {
+            Debug.LogError("scoreText is not found in TriangleManager");
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

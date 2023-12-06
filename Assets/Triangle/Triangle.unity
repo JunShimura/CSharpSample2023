@@ -598,7 +598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreHeader: Surface=
-  scoreFomat: D5
+  scoreFomat: 000.0000
 --- !u!1 &938797096
 GameObject:
   m_ObjectHideFlags: 0
